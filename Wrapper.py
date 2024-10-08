@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 id= os.getenv(Username)
-password= os.getenv(Password)
+password= os.getenv(password)
 repository_id = id
 password = password
 fileName = sys.argv[1]
