@@ -3,9 +3,14 @@ import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import sys
 import time
+from dotenv import load_dotenv
+import os
 
-repository_id = 'UMASS.UMA'
-password = 'SCh0lC0mm1967'
+load_dotenv()
+id= os.getenv(Username)
+password= os.getenv(Password)
+repository_id = id
+password = password
 fileName = sys.argv[1]
 now = time.time()
 
